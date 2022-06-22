@@ -1,5 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    
     package="com.example.nativefeatures">
+    <queries>
+          <intent>
+               <action android:name="android.media.action.IMAGE_CAPTURE" />
+          </intent>
+    </queries>
    <application
         android:label="nativefeatures"
         android:name="${applicationName}"
