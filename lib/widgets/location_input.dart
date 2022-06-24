@@ -16,6 +16,7 @@ class _LocationInputState extends State<LocationInput> {
           height: 170,
           alignment: Alignment.center,
           width: double.infinity,
+          decoration: BoxDecoration(border: Border.all(width: 1,color: Colors.grey)),
           child: _previewImageUrl == null
               ? const Text(
                   'No Location Chosen',
@@ -28,6 +29,7 @@ class _LocationInputState extends State<LocationInput> {
                 ),
         ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             FlatButton.icon(
               onPressed: () {},
